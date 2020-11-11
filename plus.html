@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>_+_</title>
+        <link rel="icon" type="image/png" href="Assets/isotipoHeriTech.png" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/plus-estilos.css" >
+        <!-- <script src ="JS/plus-main.js"></script> -->
+        
+        <!-- <script data-ad-client="ca-pub-9247670133128971" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+    </head>
+    <body>
+        <header class="header">
+            <!-- ESTE ES EL NAVIGATOR PRINCIPAL -->
+            <img class="header-img" height="100" alt = "logo" src="Assets/logoHeriTech-white-black.png">
+            <nav > <!-- class="menu" --> <!-- x -->
+                <ol > <!-- class="menu-items" -->
+                    <li>
+                        <a  href = "index.html" > REGRESAR </a> <!-- class="link" -->
+                    </li>
+                </ol>
+            </nav>
+            <div class="btn-menu-container">
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu"> <img src="assets/menu-btn.png" alt="menu_button"> </label>
+            </div>
+        </header>
+        <section class="daily-module" id ="main">
+            <!-- ESTA ES LA PRIMERA SECCION DE DAILYU -->
+            <h1 style="color : white; font-size: 20px; "> test dailyU_01 </h1>
+            <form action="" id="form-plus">
+                <input type="text" class="buscadorPrincipal" id="mainSearch" placeholder="Escribe tu busqueda" autocomplete="off">
+                <br><br>
+                <input type="button" onclick="verMasTarde()" class="boton" id="verMasTardeYoutube" value="Ver Mas Tarde">
+                <input type="button" onclick="openUp()" class="boton" value="Suscripciones">
+                <br><br>
+                <section class="daily-group">
+                    <div class="daily-lateral">
+                        <h3>tiempo hasta el fin del dia</h3>
+                        <progress style="margin: 8px ;width: 80%" id="progressBar" max="100" value="50"> </progress>
+                        <p> ESTA ES LA BARRA DE LO QUE TE QUEDA DE DIA EMPIEZA A LAS 8 AM Y TERMINA A LAS 10 PM </p>
+                    </div>
+                    <div class="daily-central">
+                        <h2> menu central </h2>
+                        <p style="font-size: 40px" id="hora"> example </p>
+                        <p id="mensaje"> some mensaje </p>
+                    </div>
+                    <div class="daily-lateral">
+                        <h3> Lateral - Derecho </h3>
+                        <div class="agregar-tareas">
+                            <form id="formulario-tareas" class="FormularioTareas" action="">
+                                <p> texto de ejemplo </p>
+                            </form>
+                        </div>
+                        <br>
+                    </div>
+                </section>
+            </form>
+        </section>
+        <div style="display: flex;">
+            <div style="width : 50%; height: 100%">
+                <section style="height: 280px" class="daily-module">
+                    <h2> Presupuesto </h2>
+                    <p style="font-size: 49.5px" id="countDown_1" > 30:00 </p>
+                    <button class="boton" id="countDownStart" onclick="startCountDown()"> Comenzar </button>
+                    <button class="boton" id="countDownStop" onclick="stopCountDown()"> Parar </button>
+                    <button class="boton" id="countDownStop" onclick="restartCountDown()"> Reiniciar </button>
+                </section>   
+            </div>
+            <div style="width : 50%; height: 100%">
+                <section style="height: 280px" class="daily-module">
+                    <p> Hola ! <br><br> te gusta tocar guitarra ?, hacer ejercicio?, programar? <br><br>
+                    esta seccion te recuerda hacer 30min de algo que quieres para tu yo del futuro
+                    <br> <br>simplemente piensa en esa actividad, activa el contador y que comienze la accion
+                    <br><br> recuerda que eres a lo que le dedicas tiempo <3 </p>
+                    <button class="boton" id="countDownStart" onclick="startCountDown()"> Comenzar Actividad </button>
+                </section>
+            </div>
+        </div>   
+        <div class="daily-module" style="display:flex; ">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5nrt2CgKtak?start=30" frameborder="0" ></iframe>
+        </div>
+        <section style="display: block" class="daily-module" id="horario">
+            <p> Horario de Clases </p>
+            <img src="Assets/horario.png">
+        </section>
+        <!--
+        <section class="daily-module" >
+            <p style="font-size: 30px"> Formulario </p>
+            <form action="" id="form">
+                <p style="font-style: oblique">
+                    .- ingresa tu correo para que te pongamos al tanto sobre actualizaciones -.
+                </p>
+                <br/>
+                <label> Correo: </label>
+                <input type="email" id="input-email" style="width: 250px;" autocomplete="off">
+                <br/>
+                <br/>
+                <input class="boton" type="submit" value="Enviar"/>
+            </form>
+        </section>
+        -->
+        <footer class="footer">
+            <div>
+                <p> Curso de desarrollo web online con platzi para KenderWeb &COPY;  </p>
+            </div>   
+        </footer>
+        <!-- AQUI COMIENZA FIREBASE -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+        <script>
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          var firebaseConfig = {
+            apiKey: "AIzaSyBRtJ3hUIGHYf211-Gw7JkK_OkqGvTB-ss",
+            authDomain: "herytech-15da1.firebaseapp.com",
+            databaseURL: "https://herytech-15da1.firebaseio.com",
+            projectId: "herytech-15da1",
+            storageBucket: "herytech-15da1.appspot.com",
+            messagingSenderId: "756415972157",
+            appId: "1:756415972157:web:64e0b3c3836cd863ddbb54",
+            measurementId: "G-52KNPTXPND"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+          
+          function writeData(){
+              
+          }
+          
+        </script>
+    <!-- AQUI TERMINA FIREBASE -->
+    
+    <script src = "JS/DBManager.js"></script>
+    <script src ="JS/plus-main.js"></script> <!-- x -->
+    <script src ="JS/tareas.js"></script>
+    <script src="JS/localStorage.js"></script>
+        
+    </body>
+</html>

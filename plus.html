@@ -29,16 +29,16 @@
         </header>
         <section class="daily-module" id ="main">
             <!-- ESTA ES LA PRIMERA SECCION DE DAILYU -->
-            <h1 style="color : white; font-size: 20px; "> test dailyU_01 </h1>
             <form action="" id="form-plus">
                 <input type="text" class="buscadorPrincipal" id="mainSearch" placeholder="Escribe tu busqueda" autocomplete="off">
                 <br><br>
                 <input type="button" onclick="verMasTarde()" class="boton" id="verMasTardeYoutube" value="Ver Mas Tarde">
                 <input type="button" onclick="openUp()" class="boton" value="Suscripciones">
+
                 <br><br>
                 <section class="daily-group">
                     <div class="daily-lateral">
-                        <h3>tiempo hasta el fin del UNIVERSO</h3>
+                        <h3>tiempo hasta el fin del dia</h3>
                         <progress style="margin: 8px ;width: 80%" id="progressBar" max="100" value="50"> </progress>
                         <p> ESTA ES LA BARRA DE LO QUE TE QUEDA DE DIA EMPIEZA A LAS 8 AM Y TERMINA A LAS 10 PM </p>
                     </div>
@@ -59,49 +59,15 @@
                 </section>
             </form>
         </section>
-        <div style="display: flex;">
-            <div style="width : 50%; height: 100%">
-                <section style="height: 280px" class="daily-module">
-                    <h2> Presupuesto </h2>
-                    <p style="font-size: 49.5px" id="countDown_1" > 30:00 </p>
-                    <button class="boton" id="countDownStart" onclick="startCountDown()"> Comenzar </button>
-                    <button class="boton" id="countDownStop" onclick="stopCountDown()"> Parar </button>
-                    <button class="boton" id="countDownStop" onclick="restartCountDown()"> Reiniciar </button>
-                </section>   
-            </div>
-            <div style="width : 50%; height: 100%">
-                <section style="height: 280px" class="daily-module">
-                    <p> Hola ! <br><br> te gusta tocar guitarra ?, hacer ejercicio?, programar? <br><br>
-                    esta seccion te recuerda hacer 30min de algo que quieres para tu yo del futuro
-                    <br> <br>simplemente piensa en esa actividad, activa el contador y que comienze la accion
-                    <br><br> recuerda que eres a lo que le dedicas tiempo <3 </p>
-                    <button class="boton" id="countDownStart" onclick="startCountDown()"> Comenzar Actividad </button>
-                </section>
-            </div>
-        </div>   
-        <div class="daily-module" style="display:flex; ">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/5nrt2CgKtak?start=30" frameborder="0" ></iframe>
-        </div>
+        
         <section style="display: block" class="daily-module" id="horario">
-            <p> Horario de Clases </p>
-            <img src="Assets/horario.png">
+            
+            <div class="daily-module" style="display:flex; ">
+                <img src="Assets/horario.png">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5nrt2CgKtak?start=30" frameborder="0" ></iframe>
+            </div>
+            
         </section>
-        <!--
-        <section class="daily-module" >
-            <p style="font-size: 30px"> Formulario </p>
-            <form action="" id="form">
-                <p style="font-style: oblique">
-                    .- ingresa tu correo para que te pongamos al tanto sobre actualizaciones -.
-                </p>
-                <br/>
-                <label> Correo: </label>
-                <input type="email" id="input-email" style="width: 250px;" autocomplete="off">
-                <br/>
-                <br/>
-                <input class="boton" type="submit" value="Enviar"/>
-            </form>
-        </section>
-        -->
         <footer class="footer">
             <div>
                 <p> Curso de desarrollo web online con platzi para KenderWeb &COPY;  </p>

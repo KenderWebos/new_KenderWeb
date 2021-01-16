@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15 ene. 2021, 13:16:01
+    Author     : kende
+*/
+
+body{
+    background-image: url("../Assets/patrones/patron5.jpg");
+    /*background-color: rgb(60,60,60);*/
+    text-align: center;
+    align-items: center;
+    color : rgb(240,240,240);
+    font-family: "Quicksand";
+    margin: 0 auto;
+}
+
+body > div{ /* .portfolio_Item */
+    margin: 0 auto;
+}
+
+ol,
+ul{
+    margin:0;
+    padding:5;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+ol a,
+ul a{
+    transition: 0.5s;
+}
+
+ol a:hover,
+ul a:hover{
+    background-color: #666;
+    color: white;
+}
+
+header{
+    background: gray;
+    display: flex;
+    
+    /*position: fixed;*/
+}
+
+.header{
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    
+    position: sticky;
+    top: 0px;
+}
+
+.header-img{
+    margin-left: 20px;
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+.header a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    
+    margin-left: 10px;
+}
+
+.header ol{
+    margin: 20px;
+    display: flex;
+}
+
+.portfolio_Item{
+    background-image: url("../Assets/patrones/patron4.png");
+    background-attachment: fixed;
+    width: 1000px;
+    background-color: rgb(120,120,120);
+}
+
+.portfolio_Item > h3{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.portfolio_Item_sub{
+    display: flex;
+    color: white;
+    padding: 20px;
+    
+}
+
+.portfolio_Item_sub > img{
+    padding-right: 25px;
+}

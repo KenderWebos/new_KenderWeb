@@ -195,6 +195,7 @@ progress_bar:hover{
 }
 
 .event-details{
+    color: #666;
     background-color:#CFAFFF;
     background-color:white;
     text-align: center;
@@ -229,7 +230,9 @@ progress_bar:hover{
 
 .event-button:hover{
     
-    -webkit-box-shadow: inset 0px 0px 10px 5px greenyellow;
+    color: purple;
+    background-color: greenyellow;
+    /*-webkit-box-shadow: inset 0px 0px 10px 5px greenyellow;*/
     
 }
 
@@ -334,6 +337,36 @@ body{
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Opera and Firefox */
 }
+
+.link{
+    display: block;
+    align-items: center;
+}
+
+.links-elements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url("../Assets/Facepalm.png")
+}
+
+.links-element{
+    color: white;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    box-shadow: 5px 5px 25px black;
+    text-align: center;
+    background-color: blueviolet;
+    transition: 1s;
+}
+
+.links-element:hover{
+    color: blueviolet;
+    background-color: white;
+}
+
+
 /*
     body header div nav ol li a
     class .nombreDeClase
@@ -355,4 +388,6 @@ body{
         100%{}
     }
 */
+
+
 

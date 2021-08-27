@@ -1,0 +1,327 @@
+
+body{
+    font-family: "Quicksand";
+    display: block;
+    margin: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    
+}
+
+::selection{
+    background-color: #9932FF;
+    color: white;
+}
+
+/* MENU PRINCIPAL */
+
+ol,
+ul{
+    margin:0;
+    padding:5;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+ol a,
+ul a{
+    transition: 0.5s;
+}
+
+ol a:hover,
+ul a:hover{
+    background-color: #666;
+    color: white;
+}
+
+header{
+    background: gray;
+    display: flex;
+    
+    /*position: fixed;*/
+}
+
+.header{
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    
+    position: sticky;
+    top: 0px;
+}
+
+.header-img{
+    margin-left: 20px;
+}
+
+/* BOTONES DEL MENU PRINCIPAL */
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+.btn-menu-container{
+    background-color: white;
+    display: none;
+}
+
+.header a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    
+    /* border: 0.5px solid gray; */
+    
+    margin-left: 10px;
+}
+
+.header ol{
+    margin:20px;
+    display: flex;
+}
+
+@media (max-width:720px)
+{
+    /*
+    .btn-menu-container
+    {
+    background-color: white;
+    display: block;
+    }
+    
+    .header ol
+    {
+        flex-direction: column;
+
+        #btn-menu:checked ~ .hero
+        {
+            background-color: white;
+        }
+    }
+    */
+
+}
+
+.plus-module
+{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    
+    padding: 20px;
+    border: 5px solid gray;
+    
+    transition: 0.5s;
+    
+    background-color: rgba(0,0,0,0.3);
+    
+    font-family: Beaufort for LOL,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    -webkit-border-image: -webkit-linear-gradient(top,#c3a758,#6b521e) stretch;
+    border-image: linear-gradient(180deg,#c3a758,#6b521e) stretch;
+    border-style: solid;
+    background-color: rgba(25,28,33,.8);
+    border-image-slice: 1;
+    color: white;  /* #937341 */                       
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+
+.plus-module:hover
+{
+    
+}
+
+/* █ FOOTER █ */ 
+
+.footer{
+    margin: 0;
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+
+}
+
+.footer p{
+    margin-left: 20px;
+}
+
+.footer img{
+    vertical-align: middle;
+}
+
+.botonLolsito{
+    
+    font-family: Beaufort for LOL,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    -webkit-border-image: -webkit-linear-gradient(top,#c3a758,#6b521e) stretch;
+    border-image: linear-gradient(180deg,#c3a758,#6b521e) stretch;
+    border-style: solid;
+    -webkit-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    transition: background-color .3s;
+    background-color: rgba(25,28,33,.8);
+    border-image-slice: 1;
+    color: #937341;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    
+    transition : 0.5s;
+}
+
+.botonLolsito:hover{
+    border: 2px solid yellow;
+    color: yellow;
+}
+
+.botonLolsito:active{
+    font-size: 10px;
+}
+
+.buscadorPrincipal
+{
+    width : 500px;
+    height : 30px;
+    
+    border-radius: 5px;
+    
+    transition: 1s;
+    text-align : center;
+    
+}
+
+.buscadorPrincipal:hover
+{
+    
+}
+
+.buscadorPrincipal:focus
+{
+    text-align : center;
+}
+
+.tableStyle{
+    background-color: #6b521e;
+    text-align: center;
+    margin: auto;
+}
+
+.tableStyle tr, td{
+    
+    text-align: center;
+    border: 1px solid black;
+}
+
+.tableStyle thead{
+    background-color: brown;
+    border-bottom: 5px solid black;
+}
+
+.tableStyle tr:nth-child(even){
+    background-color: #937341;
+}
+
+.tableStyle tr:hover{
+    background-color: gray;
+}
+
+* progress{
+    -webkit-appearance: none;
+    width: 400px;
+    height: 20px;
+    border: 2px solid black;
+    
+}
+
+
+progress::-webkit-progress-value{
+    background-color: green;
+}
+
+.boton{
+    color: white;  /* #aaa */
+    background-color: black;
+    
+    font-size: 15px;
+    height: 40px;
+    
+    transition: 0.5s;
+    
+    padding: 10px 25px;
+    border: 2px solid purple;
+    
+    background-image: linear-gradient(180deg,black,black);
+    border-image: linear-gradient(180deg,#6600CC,#9932FF) stretch;
+    border-image-slice: 1;
+    
+}
+
+.boton:hover{
+    color: #fff;
+    background-image: linear-gradient(180deg,black,purple);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    
+}
+
+.visualizar-tareas .lista li a{
+    display: block;
+    padding: 20px 0;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.visualizar-tareas .lista li a:hover{
+    
+    color: black;
+    font-weight: bold;
+    
+}
+
+.daily-module{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    
+    padding: 20px;
+    border: 5px solid purple;
+    
+    transition: 0.5s;
+    
+    background-color: rgba(0,0,0,.6);
+    
+    text-transform: uppercase;
+    
+}
+
+input[type=text].error{
+    border: 2px solid orange;
+    
+}
+
+.daily-lateral{
+    background-color: black;
+    width: 30%;
+    height: 300px;
+}
+
+.daily-group{
+    display: flex;
+}
+
+.daily-central{
+    background-color: purple;
+    width: 40%;
+    height: 300px;
+}

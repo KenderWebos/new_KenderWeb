@@ -87,6 +87,7 @@ header label:hover{
     background-attachment: fixed;
     width: 1000px;
     background-color: rgb(120,120,120);
+    border-radius: 5px;
 }
 
 .portfolio_Item > h3{
@@ -103,4 +104,5 @@ header label:hover{
 
 .portfolio_Item_sub > img{
     padding-right: 25px;
+    border-radius: 10px;
 }

@@ -1,8 +1,8 @@
 
 <html>
     <head>
-        <title>HeriTech</title>
-        <link rel="icon" type="image/png" href="Assets/isotipoHeriTech.png" />
+        <title>KenderWeb</title>
+        <link rel="icon" type="image/png" href="Assets/kender.png" />
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
@@ -16,21 +16,17 @@
             
             <!-- ESTE ES EL NAVIGATOR PRINCIPAL -->
             
-            <img class="header-img" height="100" alt = "logo" src="Assets/logoHeriTech-white-black.png">
+            <div style="display: flex">
+                <img class="header-img" height="50" alt = "logo" src="Assets/kender.png">
+                <p style="font-size: 20px; user-select: none; ">KenderWeb</p>
+            </div>
+            
             
             <nav class="menu">
                 <ol class="menu-items">
-                    <li><a class="link" href = "#descargas"> INICIO </a></li>
-                    <li><a class="link" href = "#formulario"> CONTACTO </a></li>
-                    <li><a class="link" href = "portafolio.html"> PORTAFOLIO </a></li>
                     <li><a class="link" href = "plus.html"> _+_ </a></li>
                 </ol>
             </nav>
-            
-            <div class="btn-menu-container">
-                <input type="checkbox" id="btn-menu">
-                <label for="btn-menu"> <img src="assets/menu-btn.png" alt="menu_button"> </label>
-            </div>
 
         </header>
 
@@ -48,34 +44,9 @@
                     <br><br>
                 </div>
                 
-                <div> <img src="Assets/imagenDestacada.png" style="width: 600px; margin-top: 60px"> </div>
                 
             </article>
 
-        </section>
-        
-        <section class="links">
-            
-            <!--h1>VINCULOS</h1-->
-            <div class="links-elements">
-                <div class="links-element">
-                    <h3>KEVIN</h3>
-                    <p>Portafolio de KEVIN</p>
-                    <a class="some" href="portafolio.html" target="blank">
-                        <p>VER</p>
-                    </a>
-                </div>
-                
-                <div class="links-element">
-                    <h3>DailyU</h3>
-                    <p>DailyU aplication</p>
-                    <a class="some" href="plus.html" target="blank">
-                        <p>VER</p>
-                    </a>
-                </div>
-                
-            </div>
-            
         </section>
         
         <section id = "formulario" class="contenidoDestacado">
@@ -85,7 +56,6 @@
             <form action="/suscripcion/">
                 <center>
                 <h2>> CONTACTANOS <</h2>
-                <label for="email_input"> Contactanos a heritech.contact@gmail.com <br> o </label>
                 <label for="email_input"> Deja tu email </label> 
                 <br/><br/>
                 <input type="email" id="email_input" placeholder=" ingrese su correo aqui ">

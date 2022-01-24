@@ -1,15 +1,18 @@
 
 <html>
     <head>
+
         <title>KenderWeb</title>
         <link rel="icon" type="image/png" href="Assets/kender.png" />
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="CSS/estilos.css" >
-        <script src="JS/main.js" />
-        
+        <script defer src="JS/main.js" />
         <script data-ad-client="ca-pub-9247670133128971" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     </head>
     <body>
         <header class="header">
@@ -17,59 +20,105 @@
             <!-- ESTE ES EL NAVIGATOR PRINCIPAL -->
             
             <div style="display: flex">
-                <img class="header-img" height="50" alt = "logo" src="Assets/kender.png">
-                <p style="font-size: 20px; user-select: none; ">KenderWeb</p>
+                <img class="header-img" height="70" alt = "logo" src="Assets/logoHeriTech-white-black.png">
+                <p style="font-size: 20px; user-select: none; "> </p>
             </div>
-            
-            
-            <nav class="menu">
-                <ol class="menu-items">
-                    <li><a class="link" href = "plus.html"> _+_ </a></li>
-                </ol>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">>_ KenderWeb</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                    </ul>
+                    
+                    <a class="btn btn-outline-success my-2 my-sm-0" href = "plus.html"> DailyU </a></li>
+                </div>
             </nav>
 
         </header>
 
+        
         <section class="events-section" id ="descargas">
             
-            <article class="events">
-                <div class="event-details" >
-                    <h3> INFINITY </h3>
-                    <figure>
-                    <img height="100" alt="logo_infinity" src="Assets/icono_infinity.png" >
-                    </figure>
-                    <h3> Esquiva meteoritos y consigue increibles medallas!
-                    <br/> descargalo ya! </h3><br/>
-                    <a href="https://drive.google.com/drive/folders/1K7VzheQVLu6RLs2D9m7DEYcDERr6laI0?usp=sharing" class="event-button" target="_blank"> Descargar </a>
-                    <br><br>
+            <div class="optionsPanel">
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Assets/icono_infinity.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Infinity Meteors</h5>
+                        <p class="card-text">Esquiva meteoritos y consigue increibles medallas!.</p>
+                        <a href="https://drive.google.com/drive/folders/1K7VzheQVLu6RLs2D9m7DEYcDERr6laI0?usp=sharing" class="btn btn-success" target = "_blank">Descargar APK</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://img.itch.zone/aW1nLzc3MTQzNDYucG5n/315x250%23c/goM1Y6.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Infinity Christmas</h5>
+                        <p class="card-text">Te encuentras en el polo norte un dia proximo a navidad, ves que hay una nota para ti, la lees y bueno ya tienes algo que hacer antes de navidad.</p>
+                        <a href="https://kenderwebos.itch.io/infinitychristmas" class="btn btn-success" target = "_blank">Jugar en navegador</a>
+                    </div>
                 </div>
                 
-                
-            </article>
+            </div>
 
         </section>
         
-        <section id = "formulario" class="contenidoDestacado">
+        <div class="contenidoDestacado">
             
-            <div class="test"> </div>
+            <center>
+                <div class="formBorder">
+                
+                    <div class="test"> </div>
+                
+                    </br>
+
+                    <form action="php/registrarCorreo.php" method="post">
+                        <center>
+                            <div>  
+                                <p>Nombre: <input type="text" name="input_nombre"></p>
+                                <p>Correo: <input type="text" name="input_correo"></p>
+                                <p><input class = "btn btn-success"type="submit" value="Enviar"></p>
+                            </div>
+                        <center/>
+                    </form>
+                
+                </div>    
+            </center>
             
-            <form action="/suscripcion/">
-                <center>
-                <h2>> CONTACTANOS <</h2>
-                <label for="email_input"> Deja tu email </label> 
-                <br/><br/>
-                <input type="email" id="email_input" placeholder=" ingrese su correo aqui ">
-                <br/><br/>
-                <input type="submit" class="boton" value="Enviar">
-                <br/>
-                <center/>
-            </form>
-        </section>
+        </div>
         
-        <footer class="footer">
-            <div>
-                <p> Curso de desarrollo web online con platzi para KenderWeb &COPY;  </p>
-            </div>   
+        <footer class="bg-dark text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="color:white; background-color: rgb(46, 46, 46);">
+                © 2020 Copyright: Curso de desarrollo web de platzi y Curso de Git y GitHub de platzi <3.
+                
+                <!-- a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a -->
+            </div>
+            <!-- Copyright -->
         </footer>
 
     </body>
